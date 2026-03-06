@@ -1,0 +1,89 @@
+#Python cna be run on Pycharm or command promt. Command prompt good for leaning, lightweight, Pycharm is full featured with debuggers.
+#IDE: Integrated developemtn envrionment special place to execute python code, e.g pycharm
+#In pyhcar, new project an dthne new file
+
+#This hash means this is a comment and wont be executed
+
+print("Hello")
+#Very basic python code that prints the string "hello"
+#Console is where python outputs
+
+
+#Variables store information, there are no spaces, so use underscore to separate words
+character_name= "John"
+print("My name is" + character_name)
+#This prints "My name is John", The two strings are concatenated
+
+#String variable is plain text in quoatation mark
+#Integer is plain whole number
+#Boolean variable is true or false value
+#Float is decimal point
+
+print("Learn\nPython")
+#\n creates a new line 
+
+phrase = "Leanr Python"
+#Stored some string in my variable "phrase"
+print(phrase.lower())
+#This converts my string to lower case
+print(phrase.upper())
+
+#Checking if a string is upper or lower case
+print(phrase.isupper())
+print(phrase.islower())
+#output should be a bool
+
+print(phrase.upper().isupper())
+#converts phrase to uppercase, then checks if it is upper case
+
+print(len(phrase))
+#find the length of pnrase
+print(phrase[0])
+#gives the first value/digit of the phrase, starts with 0, 1 is the second etc
+# however you can go backwards, so -1 is the last value etc
+
+print(phrase.index("L"))
+#gives me the value of the capital letter L in our phrase variable
+
+print(phrase.replace("nr", "rn"))
+#replaces the letters nr with rn
+
+print(10 % 3)
+#modulus operator gives the remainder of 10/3
+
+my_number = 5
+print(str(my_number))
+#converts my number (5) into a string, this "5" can nw be cncatenated with strings
+#Normal integers cannot be cincatentaed with strings, so it has to be converted first
+
+my_number = -8
+#changed the value
+print(abs(my_number))
+#gives the absolute value of my numbr which is 8
+
+print(pow(3, 2))
+# this is 3^2 so its 9
+print(max(3, 2))
+#Tells us which number is bigger, min function does the opposit
+
+print(round(6.7))
+#rounds my numebr up to 7
+
+from math import *
+#grabs maths functios tat we can use. now we can access more
+
+print(floor(3.6))
+#chops off the decimal point
+print(ceil(4.2))
+#rounds the number up unconditionally, so this one wpuld be 4
+
+print(sqrt(9))
+#gives square root, soanswer shuld be 3.0
+
+#to get an input fro  user use input function
+name = input("Enter name: ")
+print("Hello " + name + "!")
+
+
+
+
