@@ -78,12 +78,87 @@ print(ceil(4.2))
 #rounds the number up unconditionally, so this one wpuld be 4
 
 print(sqrt(9))
-#gives square root, soanswer shuld be 3.0
+#gives square root, so answer shuld be 3.0
 
 #to get an input fro  user use input function
 name = input("Enter name: ")
 print("Hello " + name + "!")
 
+new_number = "3"
+print(int(new_number))
+#this converted out string "3" into the number 3
+print(float(new_number))
+#This converted the number 3 into the float 3.0
 
+colour = input("Enter a colour: ")
+print("Roses are " + colour)
+
+friends = ["Pip", "Chip", "Mip", "Kip"]
+print(friends[1])
+#That would print Chip
+print(friends[1:])
+#That would print Chip and Mip, as would print(friends[1:3])
+# You can modify the list by:
+friends[1] = "Kip"
+#Now kip is the 1 value
+new_friends = ["Tip", "Wip"]
+friends.extend(new_friends)
+print(friends)
+#That extended the freinds list from the en
+friends.insert(1, "Bip")
+#Adds Bip to position 1
+friends.remove("Kip")
+#kip is not our freind anymore
+friends.pop()
+#This pops na item off the list
+friends.clear()
+#Thta would clear the list
+friends.count("Chip")
+#How many Chips are in the list, only one
+friends.sort()
+#Put in alphabetical order
+friends.reverse()
+#reverse the list order
+friends2 = friends.copy()
+#friends2 has the same atrubutes as friends
+
+#Tuples can store multiple peices of information
+coordinates = (4, 5)
+print(coordinates[0])
+#prints 4
+#Tuple values cant be changed
+
+def say_hi():
+  print("Hi user")
+
+say_hi()
+
+#def is dfor functions and the next line has to be indented for it to e part of the function
+#The last line calls/executre the functions
+#if i add a name to the function inside the brackets it means every time i run the function i have to give a name:
+
+def say_hi(name):
+  print("Hi " + name)
+
+say_hi("Chip")
+say_hi("Mip")
+
+#Can add more than one information
+
+def say_hi(name, age):
+  print("hi " + name + " you are " + age)
+
+say_hi("Mip", "35")
+
+
+def cube(number):
+  return number*number*number
+
+print(cube(3))
+
+#Return gives us a value back
+
+
+say hi("Chip")
 
 
