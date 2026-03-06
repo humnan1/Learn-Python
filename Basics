@@ -159,6 +159,47 @@ print(cube(3))
 #Return gives us a value back
 
 
-say hi("Chip")
+#Must be capital T True for Bool
+#Notice the indentatio (Tab)
+is_female = True
+if is_female:
+  print("You are a female")
+else:
+  print("You are not female")
+
+# or operator works if at least one condition is True
+# and operator only owrks if both/all conditions are true, so in the below scenario if or was replaced by and , you would have to be both male an dtall for the first message to print
+# elif = else if
+#not function negates what was in the brackets, so  it is checking if you are not tall
+
+is_male = False
+is_tall = True
+if is_male or is_tall:
+  print("You are male or tall or both")
+elif is_male and not(is_tall):
+  print("you are a short male")
+else:
+  print("your are not male or tall")
+
+#Finding the biggest number
+def max_num(num1, num2, num3)
+  if num1 >= num2 and num1 >= num3:
+    return num1
+  elif num2 >= num1 and num2 >= num3:
+    return num2
+  else:
+    return num3
+
+print(max_num(4, 7, 2)
+#This ouptuts the largest number
+
+# == The same as
+# != not equal to
+  
+
+
+
+
+
 
 
