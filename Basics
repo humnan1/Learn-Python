@@ -195,7 +195,165 @@ print(max_num(4, 7, 2)
 
 # == The same as
 # != not equal to
-  
+
+num1 = float(input("Enter first number: "))
+op = input("Enter operator: ")
+num2 = float(input("Enter second number: "))
+if op == "+":
+  print(num1 + num2)
+elif op == "-":
+  print(num1 - num2)
+elif op == "/":
+  print(num1 / num2)
+elif op == "*":
+  print(num1 * num2)
+else:
+  print("invalid operator")
+
+
+#Creating a dictionary for month conversions
+#The dictionary will beplaced inside these curly brackets {}
+#The first value (e.g. Jan) is called the key nd the second value (e.g. January) is called the value)
+
+monthConversions = {
+  "Jan": "January",
+  "Feb": "February",
+  "Mar": "March",
+  "Apr": "April",
+  "May": "May",
+  "Jun": "June",
+  "Jul": "July",
+  "Aug": "August",
+  "Sep": "September",
+  "Oct": "October",
+  "Nov": "November",
+  "Dec": "December",
+}
+
+print(monthConversions["Nov"])
+print(monthConversions.get("Dec"))
+print(monthConversions.get("Luv", "Not valid Key"))
+#keys canbe anything even numbers as long as they are all unique
+
+
+#When creating a while loop creating a variable that is a numbr
+#paying attention to things like indentation(Tab) and colons
+i = 1
+while i <= 10:
+  print(i)
+  i += 1   # Same as i = i + 1
+
+print("finished loop")
+
+
+#building a guessing game, kind of like a password
+
+secret_word =  "Chip"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = False
+
+while guess != secret_word and not(out_of_guesses):
+  if guess_count < guess_limit:
+    guess = input("Enter guess: ")
+    guess_count += 1
+  else:
+    out_of_guesses = True
+
+if out_of_guesses:
+  print("Out of guesses, YOU LOSE!")
+
+else:
+  print("You win!")
+
+print("Access granted")
+# Like a password system, as long as user is not outguesses , orgets the password, while loop contuinues.
+
+
+#For loops
+friends = ["Chip", "Mip", "Pip", "Wip"]
+for friends in friends:
+  print(friends)
+
+for numbers in range(10):
+  print(numbers)
+
+for numbers in range(3, 10)
+  print(numbers)
+
+for numbers in range(6)
+  if index == 0:
+    print("first iteration")
+  else:
+    print("Not first")
+
+#Building exponent function
+
+print(2**3) #2^3
+
+def raise_to_power(base_num, pow_num):
+  result = 1
+  for index in range(pow_num):
+    result = result * base_num
+  return result
+
+print(raise_to_power(3, 2))
+
+number_grid = [ 
+  [1, 2, 3]
+  [4, 5, 6]
+  [7, 8, 9]
+  [0]
+]
+
+print(number_grid[0][0])  #print the row 0, column 0, which is 1
+
+
+number_gridd = [ 
+  [1, 2, 3]
+  [4, 5, 6]
+  [7, 8, 9]
+  [0]
+]
+
+for row in number_gridd:
+  for col in row: 
+    print(col) #prints every value in every column
+
+#build a basic transator for a secret language, every vowel is a h
+ def translate(phrase):
+  translation = ""
+  for letter in phrase:
+    if letter in "AEIOUaeiou"
+      translation = translation + h
+    else:
+      translation = translation + letter
+  return translation 
+
+print(translate(input("Enter a phrase ")))
+
+#try/except
+
+try:
+  number = int(input("enter a number: "))
+  print(number)
+except ZeroDivisionError as err:
+  print(err)
+except ValueError:
+  print("Invalid input")
+
+#Reading external files
+employee_file = open( , ) #imnsert name of file to open the file as a stirng
+# enter this before the frst comma, 
+# after the first comman enter the mode you want tp open it as e.g. "r" is read only file, "w" can be change "a" append , infrmation can be added, "r+" read and write
+
+print(employee_file.readable()) #check if the employee file is readable 
+q
+
+employee_file.close() # close the file
+    
+
 
 
 
