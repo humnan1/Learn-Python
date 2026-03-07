@@ -349,10 +349,70 @@ employee_file = open( , ) #imnsert name of file to open the file as a stirng
 # after the first comman enter the mode you want tp open it as e.g. "r" is read only file, "w" can be change "a" append , infrmation can be added, "r+" read and write
 
 print(employee_file.readable()) #check if the employee file is readable 
-q
+print(employee_file.readline()) #print the first line of ht efile, a
+print(employee_file.readlines()) #take all the linesa dn put them in a list
 
+for employee in employee_file.readlines():
+print(employee)
+
+employee_file.write("Toby -Human Resources") # add this to the end of th efile
 employee_file.close() # close the file
-    
+
+
+
+
+class Student: # imahine this ina dfferent python file  file, it defines what a student is 
+
+  def___init__(self, name, major, gpa, is_on_probation):
+    self.name = name
+    self.major = major
+    self.gpa = gpa
+    self.is_on_probation = is_on_probation
+
+# back on python main
+from Student import Student  #first student is efferein gto the file,a nd the secnd sudent is reffering to the class "student"
+
+Student1 = Student("Chip", "Business", 3.1, False) #this is an object called student one
+Student2 = Student("Mip", "Art", 2.5, True)
+print(student1)
+print(student2.gpa)
+
+
+#Building a multiple choice quiz
+
+class Question:    #In separate python file
+  def_init_(self, prompt, answer):
+    self.prompt = prompt
+    self.answer = answer
+
+#In main python file
+from Question import Question
+
+question_prompts = [
+  "What colour are apples?\n(a) Red\n(b) Purple\n(c) Orange\n\n",
+  "What colour are bananas\n(a) Magenta\n(b) BLue\n(c) Yellow\n\n",
+  "What colour are strawberries\n(a) Yellow\n(b) Red\n(c) Blue\n\n"
+]
+
+questions = [
+  Questions(question_prompts[0], "a")
+  Questions(question_prompts[1], "c")
+  Questions(question_prompts[2], "b")
+]
+
+def run_test(questions):
+  score = 0
+  for question in questions:
+    answer = input(question.prompt)
+    if answer == question.answer
+      score += 1
+  print("You got " + str(score)  + "/" + str(len(question))) + "Correct")
+
+run_test(questions)
+
+
+
+
 
 
 
