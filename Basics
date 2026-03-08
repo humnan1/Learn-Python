@@ -22,6 +22,9 @@ print("My name is" + character_name)
 print("Learn\nPython")
 #\n creates a new line 
 
+user_name = input("What is your name? ")
+
+
 phrase = "Leanr Python"
 #Stored some string in my variable "phrase"
 print(phrase.lower())
